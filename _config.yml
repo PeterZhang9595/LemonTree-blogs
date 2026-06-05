@@ -1,8 +1,138 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Learning Notes
+description: Zyy's website.
 theme: just-the-docs
 
 url: https://PeterZhang9595.github.io/LemonTree-blogs
 
 aux_links:
-  Template Repository: https://github.com/PeterZhang9595/LemonTree-blogs
+  Website Repository: https://github.com/PeterZhang9595/LemonTree-blogs
+
+aux_links_new_tab: true
+
+logo: "/assets/images/cat.jpg"
+
+favicon_ico: "/assets/images/VW Beetle.ico"
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
+  focus_shortcut_key: 'k'
+
+
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.15.0"
+
+
+
+# Enable or disable the side/mobile menu globally
+# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+nav_enabled: true
+
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+
+
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  highlight:
+    color: yellow
+  important:
+    title: Important!
+    color: green
+  tricks:
+    title: Tricks
+    color: purple
+
+
+collections:
+  tests:
+    permalink: "/:collection/:path/"
+    output: true
+  cs:
+    permalink: "/:collection/:path/"
+    output: true 
+  ai:
+    permalink: "/:collection/:path/"
+    output: true
+  essays:
+    permalink: "/:collection/:path/"
+    output: true
+  courses:
+    permalink: "/:collection/:path/"
+    output: true
+  tools:
+    permalink: "/:collection/:path/"
+    output: true
+  
+
+just_the_docs:
+  collections:
+    cs:
+      name: Computer System
+      nav_fold: true
+      search_exclude: false
+    ai:
+      name: Artificial Intelligence
+      nav_fold: true
+      search_exclude: false
+    essays:
+      name: 随笔杂文
+      nav_fold: true
+      search_exclude: false
+    courses:
+      name: 课程测评
+      nav_fold: true
+      search_exclude: false
+    tools:
+      name: 实用工具
+      nav_fold: true
+      search_exclude: false
+    tests:              # 引用上面定义的 tests
+      name: 测试页面    # 在导航菜单里显示的分类名称
+      nav_fold: true    # (可选) 默认折叠该分类
+      search_exclude: true # (可选) 是否从搜索结果中排除
+ 
+# Kramdown math settings to enable MathJax rendering
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  parse_block_html: true
+
+    
