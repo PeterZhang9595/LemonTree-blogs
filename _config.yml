@@ -41,16 +41,12 @@ search:
   # Supports true or false (default)
   button: false
   # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
-  focus_shortcut_key: 'k'
-
-
+  focus_shortcut_key: "k"
 
 mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "11.15.0"
-
-
 
 # Enable or disable the side/mobile menu globally
 # Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
@@ -62,10 +58,8 @@ nav_enabled: true
 # Supports true (default) or false
 heading_anchors: true
 
-
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
-
 
 callouts:
   warning:
@@ -79,7 +73,9 @@ callouts:
   tricks:
     title: Tricks
     color: purple
-
+  update:
+    title: Update
+    color: red
 
 collections:
   tests:
@@ -87,7 +83,7 @@ collections:
     output: true
   cs:
     permalink: "/:collection/:path/"
-    output: true 
+    output: true
   ai:
     permalink: "/:collection/:path/"
     output: true
@@ -100,7 +96,6 @@ collections:
   tools:
     permalink: "/:collection/:path/"
     output: true
-  
 
 just_the_docs:
   collections:
@@ -124,15 +119,13 @@ just_the_docs:
       name: 实用工具
       nav_fold: true
       search_exclude: false
-    tests:              # 引用上面定义的 tests
-      name: 测试页面    # 在导航菜单里显示的分类名称
-      nav_fold: true    # (可选) 默认折叠该分类
+    tests: # 引用上面定义的 tests
+      name: 测试页面 # 在导航菜单里显示的分类名称
+      nav_fold: true # (可选) 默认折叠该分类
       search_exclude: true # (可选) 是否从搜索结果中排除
- 
+
 # Kramdown math settings to enable MathJax rendering
 kramdown:
   input: GFM
   math_engine: mathjax
   parse_block_html: true
-
-    
